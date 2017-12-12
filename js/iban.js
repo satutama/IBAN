@@ -33,15 +33,15 @@ function submit(account) {
         accountNumber = account;
     }
     else {
-        accountNumber = document.getElementById('submit').value;
+        accountNumber = document.getElementById('submit').value.replace(/ /g, '');
     }
     if (validate(accountNumber) === true && check2Digit(accountNumber) === true && checkBIC(accountNumber) === true) {
         var rearangeNumber = rearange(accountNumber);
         var convertNumber = convert(rearangeNumber);
-        document.querySelector('#result').innerHTML = "succeed";
+        document.querySelector('#result').innerHTML = "Correct IBAN number";
     }
     else {
-        document.querySelector('#result').innerHTML = "failed";
+        document.querySelector('#result').innerHTML = "Wrong IBAN number";
     }
 }
 function validate(account) {
@@ -104,3 +104,4 @@ function compute(converted) {
         return failed;
     }
 }
+//# sourceMappingURL=iban.js.map

@@ -2,12 +2,13 @@
 
 <head>
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-    <script src="iban.js"></script>
+    <script src="js/iban.js"></script>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-    <p class="label">Bank account</p>
-    <input id="submit" type="text" class="bankAccount">
+    <h1 class="label">Check IBAN number</h1>
+    <input id="submit" type="text" class="bankAccount" placeholder="IBAN number">
     <button onclick="submit()">Check</button>
     <p id="result"></p>
 </body>

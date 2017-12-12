@@ -31,21 +31,20 @@ const swift = ['ABNA', 'INGB', 'RABO'];
 
 function submit(account?: string) {
     let accountNumber;
-
     if ((<HTMLInputElement>document.getElementById('submit')) === undefined || (<HTMLInputElement>document.getElementById('submit')) === null) {
         accountNumber = account;
     }
     else {
-        accountNumber = (<HTMLInputElement>document.getElementById('submit')).value;
+        accountNumber = (<HTMLInputElement>document.getElementById('submit')).value.replace(/ /g, '');
     }
 
     if (validate(accountNumber) === true && check2Digit(accountNumber) === true && checkBIC(accountNumber) === true) {
         let rearangeNumber = rearange(accountNumber);
         let convertNumber = convert(rearangeNumber);
-        document.querySelector('#result').innerHTML = "succeed";
+        document.querySelector('#result').innerHTML = "Correct IBAN number";
     }
     else {
-        document.querySelector('#result').innerHTML = "failed";
+        document.querySelector('#result').innerHTML = "Wrong IBAN number";
     }
 }
 

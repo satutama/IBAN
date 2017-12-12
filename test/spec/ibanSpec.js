@@ -9,12 +9,12 @@ describe("IBAN Validation", function () {
         })
         it('should give failed result when button is clicked with empty string', () => {
             let input = submit();
-            expect(mockDomObject.innerHTML).toEqual('failed');
+            expect(mockDomObject.innerHTML).toEqual('Wrong IBAN number');
         });
 
         it('should give succeed result when button is clicked with correct string', () => {
             let input = submit('NL34RABO0145225224');
-            expect(mockDomObject.innerHTML).toEqual('succeed');
+            expect(mockDomObject.innerHTML).toEqual('Correct IBAN number');
         });
     })
 

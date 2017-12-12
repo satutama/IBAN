@@ -1,8 +1,12 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
-        "outDir": "/",
-        "rootDir": "/"
-    }
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "watch": true,
+        "outDir": "js"
+    },
+    "files": [
+        "./app/iban.ts"
+    ]
 }
