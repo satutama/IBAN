@@ -1,0 +1,249 @@
+Command pallete     : ctrl + ^ + P
+
+open current folder from Command prompt : code .
+
+show/hide sidebar : ctrl + B
+
+Go to line : ctrl + G
+
+Go to file : ctrl + P
+
+Split screen : ctrl + 1/2/3
+
+
+Code refactoring
+
+select all same text : ctrl + F2 
+select all spesific same text : ctrl + ^ + l
+select and check : ctrl + d, ctrl + K to skip
+ 
+Javascript intellisense with typings - reference -- need more clarity
+
+find all function occurences : shift + F12
+
+
+
+Create new Angular project with bower
+1. Create new folder and files
+2. npm install bower -g
+3. bower init
+4. bower install angular --save
+5. set your files
+6. install server: npm install http-server-g
+7. run the server: http-server
+8. stop the server and run this code to push it to Github:
+    git remote add origin https://github.com/satutama/newidea.git
+    git push -u origin master
+
+
+
+Preparing for EXAM MTA 98-375
+    How to Build an App
+    1. Planning your project
+    2. designing the user interface
+    3. updating the app manifest
+    4. writing the code
+    5. building the app
+    6. debugging and testing the app
+    7. packaging the app
+    8. validating the app
+    9. deploying the app
+
+    Runtime Environments
+    - WinRT: - provides developers with access to a user's hardware and operating system. 
+             - It does this through the WinRT and Windows Library for Javascript APIs.
+                Application programming interface (API) is a set of guidelines that allow one program to communicate with another.
+
+    The app container
+        When web app ecexutes, it does so in a contained environment ( separate memory space). The purpose is to prevent apps from corrupting the operating system.
+
+    .NET Framework
+        - provides secure environment for Web apps to run
+        - The Framework uses security transparency to separate different kinds of code wjile running
+        - permission sets define what application code has access and ability to do
+
+    Different States
+        - session States
+        - application States
+        - persisten state information
+    
+    Web Storage
+        - local Storage
+        - session Storage
+
+
+
+    Module 2. Building the user interface
+    New with HTML5
+        - Audio and video tags
+        - canvas : to draw graphics on a web page
+        - media queries : feature in CSS3 that detects screen size and adjust output to fit
+        - new API
+        - Geolocation: uses Javascript to detect the geographic location of a device
+
+    semantic HTML - ensures tag names match with the function that a tag performs
+    <header>
+    <nav>
+    <section>
+    <article>
+    <aside>
+    <footer>
+
+
+
+    Module 3. CSS essential
+        - @font-face rule in CSS3, allows developer to use any font as long as it is located on their web server
+
+        Content Flow
+        - Block : content placed on its own line above or below other content
+        - Inline : content fits on the same line with other content before or after it
+
+        Positioning
+        - Floating elements:    allows you to move an element all the way to the left or right of a page.
+                                other content will wrap around the floated content
+        - clearing a float:    using the clear property to prevent other floating elements from touching the left or the right hand sides of an element
+                                value of clear property; left, right, both, none
+
+        Positioning elements
+        - static : positions an element within it normal Flow
+        - relative : positions an element in relation to where it would normally be positioned in the flow of content
+        - absolute : ensures that the positioning of an element doesn't impact other content
+        - fixed : positions an element in relation the browser window and stays in the same place
+
+        Content Overflow
+        Overflow : scroll | visible | hidden
+
+        User interface
+        - Vendor Prefixes:
+            Internet Explorer   -ms-
+            Firefox             -moz-
+            opera               -o-
+            Chrome              -webkit-
+            Safari              -webkit-
+
+        CSS Box Model
+        margin > border > padding > content
+
+        Block-level and inline elements
+        - Block-level elements: create boxes that are a part of a pages layout (<div>,<p>,<ul>,<h1>,etc)
+        - Inline elements: are used to format content (<a>, <strong>, <em>, <input> etc)
+
+        CSS Flexbox Box Model
+        - Layout mode that provides flexibility when a user changes the size of their browser window
+        - media queries used to determine which device is being used
+        - Flexbox items
+            Flexbox and inline flexbox
+
+        Grid Layout
+        - When the flexbox box model isn't appropriate, use Grid Layout model
+        - uses CSS to structure content using rows and columns
+        - easier to use compare to HTML tables
+
+    
+    Module 4,5,6. Managing text Flow by using CSS
+        CSS Regions
+        - must specify content source and content containers
+        - flow-from : .region{ -ms-flow-from: mainl;}
+        - flow-into : #content{ -ms-flow-into: main;}
+
+        To be able to use hyphenation, should declare a language first. <html lang ="en">
+
+        CSS exclusion or positioned float, allows you to place elements in a specific lovation on a web page
+        declare an exclusion by using the wrap-flow property. May not be supported by all major browsers, use vendor prefixes!
+    	
+    Module 7. Managing the graphical interface by using CSS
+        Graphic Effects
+        - rounded corners using border-radius
+        - creating shadows using box-shadow, value: h-shadow v-shadow blur color spread inset
+        - transparancy using opacity
+        - background gradients: 
+            - linear-gradient (top to bottom)
+            - radial-gradient (out from the center)
+            - repeating-linear-gradient
+            - repeating-radial-gradient
+            - using background: linear-gradient(to top, white 20%, blue 80%); 
+
+        2d&3d transformation
+        - transform is an effect that lets you change the size, shape, and position of an element
+        - to add transformations, use transform property with one of its methods.
+        - 2D translation, moves an element without rotating, skewing, or turning the image
+            translate() method accepts 2 values; for the x-axis and y-axis
+            transform: translate(200px, 0px);
+        - 2D scaling, willl increase or decrease its size
+            scale() method accepts 2 values; to adjust its width and its height
+            transform : scale(2,2);
+        - 2D rotation, will turn it clockwise or counterclockwise
+            rotate() method accepts th enumber of degrees to rotate the object
+        - 3D rotation, will rrotate an element around its x-axis or y-axis
+            rotateX() and rotateY() accepts the number of degrees to rotate the object
+        - 2D skewing, will strect it on or more directions
+            skew() method accepts 2 value; number of degrees to turn the object around the x-asis and the y-axis
+        
+        Transitions
+        - Transition is a visible movement from one state to another on screen
+            to create, use transition property, you must also set the duration, the delay, and the timing function
+        
+        Animations
+        - move static images in a way that makes them appear as though they are moving
+            use @keyframes rule to adjust the timings of an Animations
+
+
+    Module 8. Javascript and coding essentials
+    
+    Module 9. Animation, Graphics, and Accessing Data
+        The XMLHttpRequset API
+            . Uses JavaScript to pass data in the form of text strings between aclient and server
+            . function load(url, data, callback){
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", url, true); // specifies the HTTP method for contacting the server
+                xhr.onload = function(){
+                    callback(xhr.responseText); // get response from the server
+                }
+                chr.send(data); // sends the data
+            }
+
+        Parsing, when you send and receive data, you have to parse which components will be used.
+            Parsing is the analysis of complex information into its smaller parts
+            - JSON 
+
+        Loading and saving files, Javascript allows to do these.
+            Data can be stored locally when user is offline using the application cache or appcache
+            Appcache stores resources, such as HTML CSS and Javascript files, locally on a user's machine
+        
+        Validating User input
+            Javascript can be used to perform client-side validation of form input.
+            With HTML5, client-side validation is performed based on the input type
+
+        Cookies, small text files that web sites save on your computer
+            with Javascript you can store and retrieve information from cookies
+
+    Module 10. JS coding fot the touch interface
+        2 different types of touch screens: 
+            capacitive touch screens
+            resistive touch screens
+        - finger moves are called gestures, how an app respods to a gesture is called a touch environment
+        - Event listeners: addEventListener method attach an even handler to an HTML element
+            the general syntax: document.addEventListener("touchstart", touchstartHandler, false);
+        - Gesture events: occurs when a user touches the screen with multiple fingers
+            common gesture events: gesturestart, gesturechange, gestureend
+        - Touch Events: action that an application takes in response to agesture
+            common touch events: touchstart, touchmove, touchend, touchcancel
+        - Touch Objects: detects input from touch-enabled devices
+            . touch objects are referenced in touchlist
+
+        HTML5 APIs
+            WHATWG : Web Hypertext Application Technology Working Group
+                WHATWG HTML specification includes:
+                    - Geolocation
+                    - Web Workers
+                    - WebSockets
+                    - file
+
+            Web Storage API
+                . localStorage 
+                . sessionStorage
+
+        Question
+        About CSS
+        - is it more practical to use Grid layout and flexbox together? 
+        - What about bootstrap?
