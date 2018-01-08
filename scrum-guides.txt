@@ -1,0 +1,90 @@
+Definition of Scrum
+
+Scrum (n): A framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.
+Lightweight
+Simple to understand
+Difficult to master
+
+
+Uses of Scrum
+- Research and identify viable markets, technologies, and product capabilities;
+- Develop products and enhancements;
+- Release products and enhancements, as frequently as many times per day;
+- Develop and sustain Cloud (online, secure, on-demand) and other operational environments for product use; and,
+- Sustain and renew products.
+
+
+Scrum Theory
+Three pillars uphold every implementation of empirical process control: 
+- transparency
+    A common language referring to the process must be shared by all participants;
+    Those performing the work and those inspecting the resulting increment must share a common definition of "Done".
+- inspection
+    to detect undesirable variances on reaching the goal withoug get in the way of work.
+- adaptation
+    adjustment to minimize further deviation
+    sprint planning, daily scrum, sprint review, sprint restrospective
+
+
+Scrum Values
+commitment, courage, focus, openness and respect
+
+
+The Scrum Team
+Product Owner, the Development Team, and a Scrum Master
+Choose how best to accomplish their work, rather than being directed by others outside the team.
+Product Owner: is responsible for maximizing the value of the product resulting from work of the Development Team.
+    the sole person responsible for managing the Product Backlog:
+        Clearly expressing Product Backlog items;
+        Ordering the items in the Product Backlog to best achieve goals and missions;
+        Optimizing the value of the work the Development Team performs;
+        Ensuring that the Product Backlog is visible, transparent, and clear to all, and shows what the Scrum Team will work on next; and,
+        Ensuring the Development Team understands items in the Product Backlog to the level needed.
+The Development Team: who do the work of delivering a potentially releasable Increment of "Done" product at the end of each Sprint.
+    - They are self-organizing. No one (not even the Scrum Master) tells the Development Team how to turn Product Backlog into Increments of potentially releasable functionality;
+    - Development Teams are cross-functional, with all the skills as a team necessary to create a product Increment;
+    - Scrum recognizes no titles for Development Team members, regardless of the work being performed by the person;
+    - Scrum recognizes no sub-teams in the Development Team, regardless of domains that need to be addressed like testing, architecture, operations, or business analysis; and,
+    - Individual Development Team members may have specialized skills and areas of focus, but accountability belongs to the Development Team as a whole.
+The Scrum Master: is responsible for promoting and supporting Scrum as defined in the Scrum Guide.
+    - Ensuring that goals, scope, and product domain are understood by everyone on the Scrum Team as well as possible;
+    - Coaching the Development Team in self-organization and cross-functionality;
+    - Leading and coaching the organization in its Scrum adoption;
+    - etc
+
+
+Scrum Events
+    - The Sprint: 
+        No changes are made that would endanger the Sprint Goal;
+        Quality goals do not decrease; and,
+        Scope may be clarified and re-negotiated between the Product Owner and Development Team as more is learned.
+    - Sprint Planning:
+        What can be delivered in the Increment resulting from the upcoming Sprint?
+        How will the work needed to deliver the Increment be achieved?
+    - Daily Scrum:
+        What did I do yesterday that helped the Development Team meet the Sprint Goal?
+        What will I do today to help the Development Team meet the Sprint Goal?
+        Do I see any impediment that prevents me or the Development Team from meeting the Sprint Goal?
+    - Sprint Review:
+        Attendees include the Scrum Team and key stakeholders invited by the Product Owner;
+        The Product Owner explains what Product Backlog items have been "Done" and what has not been "Done";
+        The Development Team discusses what went well during the Sprint, what problems it ran into, and how those problems were solved;
+        The Development Team demonstrates the work that it has "Done" and answers questions about the Increment;
+        The Product Owner discusses the Product Backlog as it stands. He or she projects likely target and delivery dates based on progress to date (if needed);
+        The entire group collaborates on what to do next, so that the Sprint Review provides valuable input to subsequent Sprint Planning;
+        Review of how the marketplace or potential use of the product might have changed what is the most valuable thing to do next; and,
+        Review of the timeline, budget, potential capabilities, and marketplace for the next anticipated releases of functionality or capability of the product.
+    - Sprint Retrospective:
+        Inspect how the last Sprint went with regards to people, relationships, process, and tools;
+        Identify and order the major items that went well and potential improvements; and,
+        Create a plan for implementing improvements to the way the Scrum Team does its work.
+
+
+Scrum Artifacts
+    - Product Backlog
+    - Sprint Backlog
+    - Increment
+
+
+Definition of Done
+    Team members must have a shared understanding of what it means for work to be complete, to ensure transparency. This is the definition of "Done" for the Scrum Team and is used to assess when work is complete on the product Increment.
