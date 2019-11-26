@@ -35,22 +35,20 @@ const swift = ['ABNA', 'INGB', 'RABO'];
   styleUrls: ['./iban.component.scss']
 })
 export class IbanComponent implements OnInit {
-
+  ibanNumber;
   constructor() { }
 
   ngOnInit() {
   }
+  
+  somethingChanged(event){
+    this.ibanNumber = event.target.value  
+  }
 
-  submit(account?: string) {
-    let accountNumber;
-    if ((<HTMLInputElement>document.getElementById('submit')) === undefined ||
-      (<HTMLInputElement>document.getElementById('submit')) === null) {
-      accountNumber = account;
-    } else {
-      accountNumber = (<HTMLInputElement>document.getElementById('submit')).value.replace(/ /g, '');
-    }
+  submit() {    
+    let accountNumber = !!this.ibanNumber ?  this.ibanNumber.replace(/ /g, '') : this.ibanNumber;
 
-    if (this.validate(accountNumber) === true && this.check2Digit(accountNumber) === true && this.checkBIC(accountNumber) === true) {
+    if (this.isValid(accountNumber) && this.check2Digit(accountNumber) && this.checkBIC(accountNumber) === true) {
       const rearangeNumber = this.rearange(accountNumber);
       const convertNumber = this.convert(rearangeNumber);
       document.querySelector('#result').innerHTML = 'Correct IBAN number';
@@ -59,17 +57,8 @@ export class IbanComponent implements OnInit {
     }
   }
 
-  validate(account?: string) {
-    const error = 'not valid';
-    if (account === undefined) {
-      return error;
-    }
-
-    if (account.length === 18) {
-      return true;
-    } else {
-      return error;
-    }
+  isValid(stringLength) {
+    return !!stringLength && stringLength.length === 18 ? true : false
   }
 
   check2Digit(account?: string) {

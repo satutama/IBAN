@@ -1,4 +1,4 @@
 <h1 class="label">Check IBAN number</h1>
-<input id="submit" type="text" class="bankAccount" placeholder="IBAN number" />
+<input id="submit" type="text" class="bankAccount" placeholder="IBAN number" (change)="somethingChanged($event)"/>
 <button (click)="submit()">Check</button>
 <p id="result"></p>
