@@ -4,22 +4,17 @@ import { IbanComponent } from './iban.component';
 
 describe('IbanComponent', () => {
   let component: IbanComponent;
-  let fixture: ComponentFixture<IbanComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ IbanComponent ]
-    })
-    .compileComponents();
-  }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IbanComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = new IbanComponent();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should validate', () => {
+    expect(component.validate()).toThrowError();
+  });
+
 });
