@@ -10,7 +10,6 @@ Go to file : ctrl + P
 
 Split screen : ctrl + 1/2/3
 
-
 Code refactoring
 
 select all same text : ctrl + F2 
