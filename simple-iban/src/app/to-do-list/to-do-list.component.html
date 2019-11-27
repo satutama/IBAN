@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <ul
+      class="list-group sortable"
+      dnd-sortable-container
+      [sortableData]="_postsArray"
+    >
+      <li
+        data-id="{{ _id }}"
+        class="list-group-item clearfix"
+        *ngFor="let post of _postsArray; let i = index"
+        dnd-sortable
+        [sortableIndex]="i"
+      >
+        <span class=" pull-left ">{{ post.order }}. {{ post.title }}</span>
+        <i class="fa fa-remove pull-right text-danger delete-book "></i>
+      </li>
+    </ul>
+
+    <div id="columns " *ngFor="let post of _postsArray">
+      <div class="column " draggable="true ">
+        {{ post.order }} {{ post.title }}
+      </div>
+    </div>
+  </div>
+</div>
