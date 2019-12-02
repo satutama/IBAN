@@ -5,20 +5,19 @@ import { ToDo } from '../to-do-list/model/to-do';
 import { Observable } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
-
 @Injectable()
 export class ToDoService {
-    private _todosURL = 'https://jsonplaceholder.typicode.com/todos';
+    private _todosURL = 'https://jsonplaceholder.typicode.com/todos'
 
     constructor(private http: Http) {
     }
 
-    getTodos(): Observable<ToDo[]> {
+    getTodos(): Observable<Array<ToDo>> {
         return this.http
             .get(this._todosURL)
             .pipe(
                 map((response: Response) => {
-                    const result = <ToDo[]>response.json().filter(({ userId }: any) => userId === 1);
+                    const result = <Array<ToDo>>response.json().filter(({ userId }: any) => userId === 1);
                     for (let i = 0; i < result.length; i++) {
                         result[i].order = i;
                     }
@@ -29,6 +28,6 @@ export class ToDoService {
     }
 
     private handleError(error: Response) {
-        return Observable.throw(error.statusText);
+        return Observable.throw(error.statusText)
     }
 }

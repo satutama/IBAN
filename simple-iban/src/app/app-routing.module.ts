@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { IbanComponent } from './iban/iban.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 
-
 const routes: Routes = [
     {
         path: '',

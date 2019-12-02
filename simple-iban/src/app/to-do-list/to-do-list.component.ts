@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ToDo } from './model/to-do';
 import { ToDoService } from '../service/to-do-service';
 
-
 @Component({
   selector: 'app-to-do-list',
   templateUrl: './to-do-list.component.html',
@@ -10,7 +9,7 @@ import { ToDoService } from '../service/to-do-service';
   providers: [ToDoService]
 })
 export class ToDoListComponent implements OnInit {
-  _postsArray: ToDo[];
+  _postsArray: Array<ToDo>;
 
   constructor(private toDoService: ToDoService) {
   }
